@@ -2,8 +2,6 @@ var addElementButton = document.getElementById('addElement');
 var ToDoContainer = document.getElementById('ToDoElements');
 var TextPut = document.getElementById('inputText');
 
-
-
 class ListElement{
     constructor(task){
         
@@ -19,6 +17,9 @@ class ListElement{
         paragraph.classList.add('ElementStyle');
         paragraph.addEventListener('dblclick', function(){
             paragraph.style.textDecoration = "line-through";
+        })
+        paragraph.addEventListener('contextmenu', function(){
+            paragraph.innerText ="";
         })
     }
 }
