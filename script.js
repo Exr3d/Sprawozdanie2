@@ -18,7 +18,9 @@ class ListElement{
         paragraph.innerText = this.task;
         paragraph.classList.add('ElementStyle');
 
-        paragraph.addEventListener('dblclick')
+        paragraph.addEventListener('dblclick', function(){
+            paragraph.style.textDecoration = "line-through";
+        })
     }
 }
 addElementButton.addEventListener('click', function(){
