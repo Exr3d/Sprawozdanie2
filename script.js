@@ -15,8 +15,18 @@ class ListElement{
         ToDoContainer.appendChild(paragraph);
         paragraph.innerText = this.task;
         paragraph.classList.add('ElementStyle');
+
+        var through = new Boolean;
+        through = false;
         paragraph.addEventListener('dblclick', function(){
-            paragraph.style.textDecoration = "line-through";
+            
+            if(through){
+                paragraph.style.textDecoration = "line-through";
+                through = false;
+            }else if(!through){
+                paragraph.style.textDecoration = "none";
+                through = true;
+            }
         })
         paragraph.addEventListener('contextmenu', function(){
             paragraph.innerText ="";
