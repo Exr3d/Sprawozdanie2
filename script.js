@@ -17,7 +17,6 @@ class ListElement{
         ToDoContainer.appendChild(paragraph);
         paragraph.innerText = this.task;
         paragraph.classList.add('ElementStyle');
-
         paragraph.addEventListener('dblclick', function(){
             paragraph.style.textDecoration = "line-through";
         })
