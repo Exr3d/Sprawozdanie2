@@ -1,7 +1,7 @@
 var addElementButton = document.getElementById('addElement');
 var ToDoContainer = document.getElementById('ToDoElements');
 var TextPut = document.getElementById('inputText');
-
+window.alert("Instrukcja:" + "\n" + "Przekreslenie i odkreslenie danego elementu -> double click" + "\n" + "Usuniecie danego elementu -> right click");
 class ListElement{
     constructor(task){
         
