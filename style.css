@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: indianred;
+    font: oblique;
+    font-family: monospace;
+}
+h1{
+    color: khaki;
+}
+.container{
+    width: 500px;
+    align-items: center;
+    text-align: center;
+}
+#inputText{
+    width: 250px;
+    height: 50px;
+    border: 1px solid white;
+    font: oblique;
+    font-size: 30px;
+    vertical-align: middle;
+}
+#addElement{
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    vertical-align: middle;
+    font-size: 30px;
+    background-color: lavender;
+}
+.ToDosList{
+    margin-top: 20px;
+    padding: 10px;
+}
+.ElementStyle{
+    margin: 0;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
